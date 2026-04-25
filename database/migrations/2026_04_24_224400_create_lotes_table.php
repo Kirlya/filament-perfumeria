@@ -11,10 +11,13 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('categorias', function (Blueprint $table) {
+        Schema::create('lotes', function (Blueprint $table) {
             $table->id();
-            $table->string('nombre')->unique();
-            $table->boolean('activo')->default(true);
+            $table->decimal('cantidad',8,0);
+            $table->unsignedBigInteger('modelo_id');
+            $table->date('fecha_ingreso');
+            $table->date('vencimiento');
+            $table->foreign('modelo_id')->references('id')->on('modelos');
             $table->timestamps();
         });
     }
@@ -24,6 +27,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('categorias');
+        Schema::dropIfExists('lotes');
     }
 };

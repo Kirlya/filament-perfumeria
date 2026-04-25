@@ -265,3 +265,4 @@ return [
     'register_role_policy' => true,
 
 ];
+ 

@@ -11,7 +11,11 @@ return new class extends Migration
      */
     public function up(): void
     {
-        //
+        Schema::table('users', function (Blueprint $table) {
+            $table->decimal('dni',8,0)->unique();
+            $table->string('telefono',9);
+            $table->boolean('activo')->default(true);
+        });
     }
 
     /**
@@ -19,6 +23,8 @@ return new class extends Migration
      */
     public function down(): void
     {
-        //
+        Schema::table('users', function (Blueprint $table) {
+            $table->dropColumn(['dni', 'telefono', 'activo']);
+        });
     }
 };
