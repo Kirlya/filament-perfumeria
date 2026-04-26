@@ -8,5 +8,9 @@ use Illuminate\Database\Eloquent\Model;
 #[Fillable('ciudad_id','provincia_id','codigo_postal')]
 class CodigoPostal extends Model
 {
-    //
+    protected $fillable = [
+        'ciudad_id',
+        'provincia_id',
+        'codigo_postal'
+    ];
 }

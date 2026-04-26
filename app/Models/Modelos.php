@@ -8,5 +8,11 @@ use Illuminate\Database\Eloquent\Model;
 #[Fillable('nombre','activo','valor','atributo_id','producto_id')]
 class Modelos extends Model
 {
-    
+    protected $fillable = [
+        'nombre',
+        'activo',
+        'valor',
+        'atributo_id',
+        'producto_id'
+    ];
 }

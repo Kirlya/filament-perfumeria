@@ -8,5 +8,9 @@ use Illuminate\Database\Eloquent\Model;
 #[Fillable('nombre','activo','categoria_id')]
 class Subcategorias extends Model
 {
-    //
+    protected $fillable = [
+        'nombre',
+        'activo',
+        'categoria_id'
+    ];
 }

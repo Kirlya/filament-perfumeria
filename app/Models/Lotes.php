@@ -8,5 +8,10 @@ use Illuminate\Database\Eloquent\Model;
 #[Fillable('cantidad','fecha_ingreso','vencimiento','modelo_id')]
 class Lotes extends Model
 {
-    //
+    protected $fillable = [
+        'cantidad',
+        'fecha_ingreso',
+        'vencimiento',
+        'modelo_id'
+    ];
 }

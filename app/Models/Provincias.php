@@ -8,5 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 #[Fillable('nombre')]
 class Provincias extends Model
 {
-    //
+    protected $fillable = [
+        'nombre'
+    ];
 }
