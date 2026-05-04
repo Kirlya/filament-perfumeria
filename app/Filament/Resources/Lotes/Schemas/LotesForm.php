@@ -8,6 +8,8 @@ use Filament\Schemas\Schema;
 
 class LotesForm
 {
+
+    //Falta vinculacion con el modelo id que pueda permitir busqueda entre los existentes
     public static function configure(Schema $schema): Schema
     {
         return $schema
