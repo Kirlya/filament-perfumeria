@@ -18,7 +18,7 @@ class AtributosResource extends Resource
 {
     protected static ?string $model = Atributos::class;
 
-    protected static string|BackedEnum|null $navigationIcon = Heroicon::OutlinedRectangleStack;
+    protected static string|BackedEnum|null $navigationIcon = Heroicon::Star;
 
     protected static ?string $recordTitleAttribute = 'id';
 

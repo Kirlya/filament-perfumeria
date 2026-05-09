@@ -18,7 +18,7 @@ class ProductosResource extends Resource
 {
     protected static ?string $model = Productos::class;
 
-    protected static string|BackedEnum|null $navigationIcon = Heroicon::OutlinedRectangleStack;
+    protected static string|BackedEnum|null $navigationIcon = Heroicon::Key;
 
     protected static ?string $recordTitleAttribute = 'id';
 

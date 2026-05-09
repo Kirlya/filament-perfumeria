@@ -18,7 +18,7 @@ class LotesResource extends Resource
 {
     protected static ?string $model = Lotes::class;
 
-    protected static string|BackedEnum|null $navigationIcon = Heroicon::OutlinedRectangleStack;
+    protected static string|BackedEnum|null $navigationIcon = Heroicon::Bars2;
 
     protected static ?string $recordTitleAttribute = 'id';
 

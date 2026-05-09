@@ -18,7 +18,7 @@ class MarcasResource extends Resource
 {
     protected static ?string $model = Marcas::class;
 
-    protected static string|BackedEnum|null $navigationIcon = Heroicon::OutlinedRectangleStack;
+    protected static string|BackedEnum|null $navigationIcon = Heroicon::Tag;
 
     protected static ?string $recordTitleAttribute = 'id';
 

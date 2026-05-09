@@ -18,7 +18,7 @@ class EtiquetasResource extends Resource
 {
     protected static ?string $model = Etiquetas::class;
 
-    protected static string|BackedEnum|null $navigationIcon = Heroicon::OutlinedRectangleStack;
+    protected static string|BackedEnum|null $navigationIcon = Heroicon::Ticket;
 
     protected static ?string $recordTitleAttribute = 'id';
 

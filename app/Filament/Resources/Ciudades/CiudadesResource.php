@@ -18,7 +18,7 @@ class CiudadesResource extends Resource
 {
     protected static ?string $model = Ciudades::class;
 
-    protected static string|BackedEnum|null $navigationIcon = Heroicon::OutlinedRectangleStack;
+    protected static string|BackedEnum|null $navigationIcon = Heroicon::MapPin;
 
     protected static ?string $recordTitleAttribute = 'id';
 

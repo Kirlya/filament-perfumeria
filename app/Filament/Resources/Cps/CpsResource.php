@@ -18,7 +18,7 @@ class CpsResource extends Resource
 {
     protected static ?string $model = Cps::class;
 
-    protected static string|BackedEnum|null $navigationIcon = Heroicon::OutlinedRectangleStack;
+    protected static string|BackedEnum|null $navigationIcon = Heroicon::Envelope;
 
     protected static ?string $recordTitleAttribute = 'Codigo Postal';
 

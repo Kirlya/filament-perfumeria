@@ -18,7 +18,7 @@ class ModelosResource extends Resource
 {
     protected static ?string $model = Modelos::class;
 
-    protected static string|BackedEnum|null $navigationIcon = Heroicon::OutlinedRectangleStack;
+    protected static string|BackedEnum|null $navigationIcon = Heroicon::Hashtag;
 
     protected static ?string $recordTitleAttribute = 'id';
 
